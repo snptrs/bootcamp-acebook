@@ -20,18 +20,16 @@ const CreateLike = ({ postId, handleRefresh }) => {
       body: JSON.stringify({}),
     });
 
-    if (response.ok) {
-      handleRefresh(); 
-    }
-
-  };
-
-  const handleButtonClick = () => {
     if (buttonRef.current.classList.contains("liked")) {
       buttonRef.current.classList.remove("liked");
     } else {
       buttonRef.current.classList.add("liked");
     }
+
+    if (response.ok) {
+      handleRefresh(); 
+    }
+
   };
 
   const buttonRef = React.createRef();
@@ -40,7 +38,7 @@ const CreateLike = ({ postId, handleRefresh }) => {
     <button
       ref={buttonRef}
       className="heart-like-button"
-      onClick={handleButtonClick}
+      onClick={handleSubmit}
     >
 
     </button>
