@@ -51,10 +51,6 @@ const SinglePost = ({ navigate }) => {
         <div id="feed" role="feed">
           <Post post={post} key={post._id} handleRefresh={handleRefresh} />
         </div>
-
-        <div id="like">
-          <CreateLike handleRefresh={handleRefresh} />
-        </div>
         <div id="new-comment">
           <CreateComment handleRefresh={handleRefresh} />
 
