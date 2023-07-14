@@ -90,6 +90,11 @@
   border: none
 }
 
+.heart-like-button:hover {
+  background-color: transparent;
+
+}
+
 .heart-like-button:before {
   position: absolute;
   top: 0;
