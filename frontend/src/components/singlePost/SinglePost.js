@@ -5,7 +5,6 @@ import CreateComment from "../createComment/CreateComment";
 import Comment from "./Comment";
 import CreateLike from "../createLike/CreateLike";
 import "../../index.css";
-import "./SinglePost.css";
 
 const SinglePost = ({ navigate }) => {
   const [post, setPost] = useState({
