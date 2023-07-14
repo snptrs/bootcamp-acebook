@@ -48,6 +48,7 @@ const passUserId = (req, res, next) => {
 
   JWT.verify(token, process.env.JWT_SECRET, (err, payload) => {
     if (err) {
+      next();
     } else {
       req.user_id = payload.user_id;
       next();

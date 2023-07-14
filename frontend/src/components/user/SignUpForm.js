@@ -19,8 +19,6 @@ const SignUpForm = ({ navigate }) => {
       formData.append("image", file);
     }
 
-    console.log(formData);
-
     fetch("/users", {
       method: "post",
       body: formData,
@@ -52,6 +50,7 @@ const SignUpForm = ({ navigate }) => {
 
   return (
     <div className="container">
+      <h1>Sign up</h1>
       <div className="form-container">
         <form
           className="form"
@@ -85,7 +84,10 @@ const SignUpForm = ({ navigate }) => {
             className="input"
             required
           />
+          Add a profile photo &nbsp;
           <input id="photo" type="file" onChange={handleFileChange} />
+          <br />
+          <br />
           <input
             role="submit-button"
             id="submit"
