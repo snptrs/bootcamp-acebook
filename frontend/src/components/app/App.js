@@ -13,6 +13,7 @@ import SinglePost from "../singlePost/SinglePost";
 import Profile from "../profile/Profile";
 import Feed from "../feed/Feed";
 import "./navbar.css";
+import LogoImage from "./acebook-logo.png";
 
 const logout = () => {
   window.localStorage.removeItem("token");
@@ -22,6 +23,9 @@ const logout = () => {
 const Navbar = () => {
   return (
     <nav className="navbar">
+      <a href="/posts">
+        <img src={LogoImage} className="logo" />
+      </a>
       <ul className="nav-links">
         <li>
           <Link to="/posts">Feed</Link>

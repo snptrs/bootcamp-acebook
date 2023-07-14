@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   background-color: #166fe5;
   padding: 10px;
 }
@@ -25,5 +25,9 @@
 }
 
 .nav-links a:hover {
-  background-color: #ff4f75;
+  text-decoration: underline;
+}
+
+.logo {
+  width: 75px;
 }
