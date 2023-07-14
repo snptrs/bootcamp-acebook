@@ -5,6 +5,7 @@ import CreateComment from "../createComment/CreateComment";
 import Comment from "./Comment";
 import CreateLike from "../createLike/CreateLike";
 import "../../index.css";
+import "./SinglePost.css";
 
 const SinglePost = ({ navigate }) => {
   const [post, setPost] = useState({
@@ -50,10 +51,6 @@ const SinglePost = ({ navigate }) => {
         <h2>Post</h2>
         <div id="feed" role="feed">
           <Post post={post} key={post._id} handleRefresh={handleRefresh} />
-        </div>
-
-        <div id="like">
-          <CreateLike handleRefresh={handleRefresh} />
         </div>
         <div id="new-comment">
           <CreateComment handleRefresh={handleRefresh} />
