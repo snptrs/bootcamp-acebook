@@ -76,12 +76,6 @@ const LogInForm = () => {
               className="submit-button"
             />
           </form>
-          <button
-            className="forgot-password-button"
-            onClick={handleForgotPassword}
-          >
-            Forgot Password?
-          </button>
           <button className="sign-up-button" onClick={handleCreateAccount}>
             Not a user? Sign up here
           </button>
