@@ -22,6 +22,8 @@ app.set("port", port);
 
 var mongoDbUrl = process.env.MONGO_URL || "mongodb://0.0.0.0/acebook";
 console.log(`Mongo URL: ${mongoDbUrl}`);
+console.log(`Mongo URL env: ${process.env.MONGO_URL}`);
+console.log(`All env: ${process.env}`);
 mongoose.connect(mongoDbUrl, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
